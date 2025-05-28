@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Bienvenido a Mi App con ArgoCD!</title>
+    <style>
+      body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+      h1 { color: #333; }
+      p { color: #555; }
+    </style>
+    </head>
+    <body>
+      <h1>Hola desde Nginx v1!</h1>
+      <p>Desplegado con Argo CD en OpenShift Local.</p>
+      <p>Este es el contenido inicial.</p>
+    </body>
+    </html>
